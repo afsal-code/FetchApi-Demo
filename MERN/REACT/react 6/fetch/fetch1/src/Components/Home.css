@@ -1,0 +1,99 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f3f4f6; /* Light grey background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 1600px; /* Adjusted max-width to accommodate 4 cards */
+    justify-content: center;
+  }
+  
+  .product-card {
+    width: 395px; /* More Amazon-like size */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .product-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .product-card p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .product-card .title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    height: 50px; /* Fix title height */
+    overflow: hidden;
+  }
+  
+  .product-card .description {
+    font-size: 14px;
+    color: #666;
+    margin: 10px 0;
+    height: 40px;
+    overflow: hidden;
+  }
+  
+  .product-card .price {
+    font-weight: bold;
+    color: #e74c3c;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  /* Star Rating Style */
+  .product-card .rating {
+    color: #f1c40f;
+    font-size: 14px;
+  }
+  
+  /* Button for Add to Cart */
+  .product-card .add-to-cart {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #ff9900;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s;
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center text */
+  }
+  
+  .product-card .add-to-cart:hover {
+    background: #e68a00;
+  }
