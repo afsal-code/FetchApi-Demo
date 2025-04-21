@@ -1,0 +1,78 @@
+.custom-navbar {
+    background: linear-gradient(135deg, #1a1a1a, #333);
+    padding: 15px 20px;
+  
+    .navbar-brand {
+      color: #4CAF50 !important;
+      font-size: 24px;
+      font-weight: bold;
+    }
+  
+    .navbar-nav .nav-link {
+      color: #ddd !important;
+      font-size: 16px;
+      margin-right: 15px;
+      transition: color 0.3s ease-in-out;
+  
+      &:hover {
+        color: #4CAF50 !important;
+      }
+    }
+  
+    .dropdown-menu {
+      background: #222;
+      border: none;
+  
+      .dropdown-item {
+        color: #ddd;
+        transition: background 0.3s ease-in-out;
+  
+        &:hover {
+          background: #4CAF50;
+          color: white;
+        }
+      }
+    }
+  
+    .search-bar {
+      background: #444;
+      border: none;
+      color: white;
+      padding: 10px;
+      border-radius: 20px;
+      width: 180px;
+  
+      &::placeholder {
+        color: #bbb;
+      }
+  
+      &:focus {
+        border: 2px solid #4CAF50;
+      }
+    }
+  
+    .btn-search {
+      background: #4CAF50;
+      color: white;
+      border-radius: 20px;
+      padding: 10px 15px;
+      border: none;
+      transition: background 0.3s ease-in-out;
+  
+      &:hover {
+        background: #45a049;
+      }
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .custom-navbar {
+      padding: 10px;
+  
+      .search-bar {
+        width: 100%;
+      }
+    }
+  }
+  
