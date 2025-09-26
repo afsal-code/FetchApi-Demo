@@ -6,6 +6,7 @@ const Detail = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
   const { addToCart } = useCart();
+  //the data save 
 
   useEffect(() => {
     fetch(`https://dummyjson.com/products/${id}`)
@@ -13,7 +14,7 @@ const Detail = () => {
       .then((data) => setProduct(data))
       .catch((error) => console.error("Fetch error:", error));
   }, [id]);
-
+//fetch through api
   if (!product) {
     return <div style={{ textAlign: "center", marginTop: "80px" }}>Loading...</div>;
   }
@@ -42,7 +43,8 @@ const styles = {
   wrapper: {
     paddingTop: "80px",
     display: "flex",
-    justifyContent: "center",
+    justifyContent: "center"
+    padding:"2px",
   },
   card: {
     width: "320px",
